@@ -46,17 +46,22 @@ public class generate_script : MonoBehaviour {
 						}
 				}
 		}
-	public static void changeColor(GameObject objet){
+	public static void changeColor(GameObject objet, Color couleur){//change de couleur la case ou l'on a cliquer
 
-		if (objet.renderer.material.color == Color.cyan) {
+		if (objet.renderer.material.color == couleur) {
 			objet.renderer.material.color = Color.white;
 				}
 		else {
-			objet.renderer.material.color = Color.cyan;
+			objet.renderer.material.color = couleur;
+				}
+	}
+	public static void verif(GameObject objet){// test pour plus tard savoir si l'objet toucher est celui rechercher
+		if (objet==_sol[0]) {
+			Debug.Log("ca marche");
+
 				}
 
-	
-	}
+		}
 	// Update is called once per frame
 	void Update () {
 				//if (Input.GetMouseButtonDown(0)) {

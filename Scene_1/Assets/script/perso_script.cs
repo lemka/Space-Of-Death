@@ -55,11 +55,12 @@ public class perso_script : MonoBehaviour {
 
 				var yolo = Physics.OverlapSphere(hit.point, 0);//chope le gameobject toucher par le ray
 
-				generate_script.changeColor(yolo[0].gameObject);
+				generate_script.changeColor(yolo[0].gameObject, Color.black);
 				x = yolo[0].transform.position.x;
 				z = yolo[0].transform.position.z;
 
 				_addPerso.transform.position = new Vector3(x, 1, z);
+				generate_script.verif(yolo[0].gameObject);
 				//_addPerso.rigidbody.AddForce ( new Vector3(x, 1, z)*Time.deltaTime);
 				//ajouter = (GameObject)Instantiate (_perso, new Vector3(x, 1, z), Quaternion.identity);//cree un nouvel objet
 				//ajouter.transform.parent = _addPerso;
