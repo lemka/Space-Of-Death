@@ -1,0 +1,89 @@
+p
+{
+	margin-left:100px;
+	margin-right:100px;
+}
+h1
+{	
+	font-style: italic;
+	text-align: center;
+}
+h2
+{
+	margin-left:100px;
+	margin-right:100px;
+}
+em
+{
+	font-style: italic;
+	text-decoration : underline;
+}
+body
+{
+	background-image:url("style/fond_ecran.png");
+	font-family: Arial, Georgia, Times New Roman, Verdana, sans-serif;
+}
+nav ul
+{
+    list-style-type: none;
+	margin-left:0px;
+}
+nav li
+{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+header
+{	
+	font-family: sans-serif;
+	font-size: 1.5em;
+}
+#logo
+{
+    display: inline-block;
+    width: 150px;
+    margin-left: 0px;
+}
+#titre_princ
+{
+	font-family: Fantasy, Cursive;
+	font-size: 6em;
+	display: inline-block;
+    vertical-align: middle
+	font-weight: normal;
+	margin-left: 150px;
+    text-shadow: 2px 2px 5px grey;
+}
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('Accueil/banniere2.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+footer
+{
+	margin-left : 1100px;
+}
+ul
+{
+	margin-left : 100px;
+}
+

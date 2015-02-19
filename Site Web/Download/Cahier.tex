@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+
+\title{Cahier des charges}
+\author{Rocca Clément \and Ziwiakowsky Paul \and Camara Mahamadou \and Benamozig Léa}
+\date{Janvier 2015}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{Cahier des charges}
+\fancyfoot[L]{by Jamais 204}
+\fancyfoot[R]{InfoSup - Epita}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\makeatletter
+\begin{titlepage}
+
+\parindent0pt
+\vspace{5cm}%
+\hfill\begingroup\fontsize{75pt}{75pt}\selectfont\bfseries Cahier des charges\endgroup\hfill\null\par
+\vspace{1cm}%
+\centering{\large \textsc{Projet S.O.D : Space Of Death}}\\
+\vspace{1cm}%
+\large Rocca Clément\\  Ziwiakowsky Paul\\ Camara Mahamadou\\ Benamozig Léa\par
+\normalfont\vfill
+\hfill Janvier 2015\par\vspace{0.5cm}%
+
+\end{titlepage}
+\makeatother
+
+\newpage
+\tableofcontents
+
+\newpage
+\section*{Introduction}
+
+Pour commencer, nous allons vous présenter les membres du projet S.O.D, qui sont les suivant : Paul Ziwiakowsky, Léa Benamozig, Mahamadou Camara et Clément Rocca. Nous étions séparés en deux groupes de deux, et le destin nous a réunis afin de former le quatuor, Jamais 204. Ainsi réunis, nous sommes donc capables de concrétiser ce projet, un magnifique RPG aux graphismes hallucinants et au scénario implacable, le tout réunis dans un monde futuriste.\\\\
+Mais d’abord, qu’est-ce qu’un RPG ? Un RPG, ou Role Playing Game, est un jeu de rôle dans lequel le joueur incarne un personnage qu’il fera évoluer au cours du temps. Les RPG sont basés sur un système de points et d’expérience. De plus, en augmentant son expérience (en combattant, effectuant des quêtes, …), le personnage pourra monter de niveau, devenir plus fort, et ainsi évoluer dans le jeu.\\\\
+Dans ce cahier des charges, nous espérons vous éclairer sur la réalisation et le fonctionnement de ce jeu vidéo. Tout d’abord, nous vous présenterons ce projet plus en détail, puis verrons quelle est sa structure. Ensuite, nous vous expliquerons pourquoi, selon nous, il est intéressant de travailler à quatre, et enfin nous vous éclairerons sur le temps et les moyens nécessaires à sa réalisation.
+
+\newpage
+\section{Présentation du projet}
+
+\subsection{Scénario}
+
+Maintenant, nous allons vous présenter Space of Death, plus généralement appelé S.O.D. \\\\
+L’Univers S.O.D se déroule, comme vous vous en douter, dans notre galaxie et plus précisément dans notre système solaire. En l’an 5204, la terre subit une attaque extra-terrestre par des aliens, les Griwans. Après une guerre nucléaire dévastatrice, l’humanité parvint cependant à repousser l’ennemi vers d’autres planètes avoisinantes. Cette guerre fut cependant dévastatrice pour l’espèce humaine, car si une grande partie des habitants de la planète moururent, les autres durent survivre dans un bain de radiation. C’est après quelques générations que nous vîmes apparaître pour la première fois des dons chez certains nouveaux nés : nous les avons surnommé les Alyxander. La menace se faisant de plus en plus ressentir, les Griwans se préparaient de nouveau à une ultime bataille avec la ferme intention d’anéantir le reste de l’humanité, nous décidâmes d’envoyer nos meilleurs Alyxander pour détruire une fois pour toute les Griwans. Pour cela il fallait réussir à neutraliser l’ordinateur central de chaques planètes dont la survie des Griwans dépendait. Ceux-ci s’étaient retranchés sur quatre planètes que nous avons nommées : Lava, Gas, Ice et Amazonia. Certaines personnes possédant un don furent donc recrutées par l’armée pour s’entrainer et développer leurs compétences afin de les envoyer combattre. Cependant les bases se régénèreront tant que la planète Gas n’aura pas été mise hors service. On attend toujours l’élu qui sauvera l’humanité … 
+
+\subsection{Caractéristiques du jeu}
+
+Afin de concevoir le jeu, nous utiliserons de la 3D isométrique. Elle permettra, par exemple, de faciliter les déplacements, l’interaction avec les personnages non joueurs, ou même le lancement des combats. Pour plus de stratégies, ceux-ci se dérouleront en tour par tour, et pour cela la plateforme sera conçue sous forme de tableau. Ce tableau sera en deux dimensions, et chaque case aura donc une valeur associée ; par exemple, le personnage ne pourra se déplacer sur un obstacle. De plus, le personnage sera dirigé à l’aide d’un curseur, qui sélectionnera un lieu ciblé, et permettra le déplacement si possible du personnage vers ce lieu. L’utilisateur pourra interagir avec l’inventaire afin d’équiper son perso comme bon lui semble. Un menu sera mis à disposition pour sauvegarder la partie en cours, gérer le son, ou bien changer de langue… Pour guider le joueur, une mini map sera présente ; bien sûr, ce jeu comprend de nombreuses autres caractéristiques, qui seront à découvrir.
+
+\subsection{Réseau : Devenir un MORPG}
+
+Nos avancées dans le projet nous permettrons par la suite de créer un mode Coopération, en réseaux, et dont le but sera de permettre à deux joueurs de combattre simultanément dans un même combat. Malheureusement, nos connaissances actuelles sont trop limitées pour pouvoir présenter avec précision cette partie.
+
+\newpage
+\section{Structure du projet}
+
+\subsection{Les besoins vitaux du jeu}
+
+\begin{itemize}
+\item Le moteur graphique : Il nous permettra de gérer l’environnement dans lequel le joueur évoluera.
+\item Le moteur physique : Indispensable au réalisme du jeu, il gèrera les collisions, la gravité…. 
+\item Le son : Nécessaire à l’immersion du joueur dans un réalisme absolue, une bande son prenante sera présente à tout moment de jeu, ainsi qu’à chaque action ou combat.
+\item L’Intelligence Artificielle : Les monstres seront codés de façons, durant un combat, à s’approcher du personnage et tenter de le détruire.
+\item Le site internet : Il regroupera une présentation du projet, un manuel de jeu, ainsi que la possibilité de télécharger le jeu.
+\end{itemize}
+
+\subsection{Les outils}
+
+Nous coderons le projet sous Windows, en utilisant le C\#. De plus, de nombreux outils extérieurs nous seront nécessaires :\\
+
+\begin{itemize}
+\item Google : Notre plus grande source d’inspiration….
+\item Unity : Tout le projet repose dessus (moteur 3D…).
+\item\LaTeX : Si vous lisez ceci, alors vous pouvez constater avec admiration l’utilité de ce logiciel, pour des rendus d’une qualité exceptionnelle.
+\item Notepad++ : Editeur de code, indispensable à la création du site web.
+\item Photoshop : Il nous sera utile pour le côté esthétique du projet (illustration…).
+\item Audacity : Tout le coté sonore du projet l’utilisera.
+\item GIT : Logiciel de gestion de version décentralisé, qui permettra une bonne coordination du groupe.
+\item L’Asset Store : Fortement lié à Unity, nous l’utiliserons pour nous procurer divers élément du décor.
+\item MonoDevelop, ou Visual Studio : Notre meilleur ami.
+\end{itemize}
+
+\newpage
+\section{Jamais deux sans quatre}
+
+\subsection{Les avantages d’un projet en groupe}
+
+\begin{center}
+\textit{« Aucun de nous ne sait ce que nous savons tous, ensemble »}
+\end{center}
+
+La capacité à travailler en équipe est une qualité que l’on doit maitriser en tant que futur ingénieurs ; de plus, le fait de travailler en groupe nous permet d’échanger les savoirs et les compétences de chaque individus afin d’acquérir une expérience, et permet en outre de partager tâche et idées. Ensemble, il est plus facile de se motiver pour réaliser les travaux, cela créé donc une responsabilité des uns vis-à-vis des autres.
+
+\subsection{Motivations personnelles}
+
+Lemka : « Je suis content d’avoir l’occasion de participer à un projet de ce genre ; c’est en effet peut-être la seule fois où je pourrais créer mon propre jeu vidéo, et c’est quelque chose j’ai toujours voulu faire. »\\
+
+Zimpo : « Epita me permet de réaliser un projet que jamais je n’aurais pu entreprendre seul. En effet le plus de cette prépa est que l’on peut commencer à coder dès la première année. Comme l’informatique et les jeux me plaisent, l’assemblage des deux lors du projet sera pour moi une grande aventure. »\\
+
+Mahcam : « Je voulais à la base faire un jeu RPG et avais déjà plusieurs idées en tête ; en ouvrant mon Kinder Surprise, je suis tombé sur des personnes qui voulaient faire un jeu ressemblant fortement au mien, on s’est donc réuni pour travailler le projet autour d’un bon KFC. »\\
+
+Benli : « Je me suis intéressée aux jeux de rôles papiers depuis des années. Et à côté de ça j’ai toujours voulu créer un jeu vidéo. J’avais donc vraiment envie de pouvoir faire un RPG. »
+
+\subsection{Votre mission, si vous l'acceptez...}
+
+Ces tableaux sont là pour donner une idée générale de la répartition des taches :\\\\
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+1ere Soutenance & Lemka & Zimpo & Mahcam & Benli\\ \hline
+Codage & X & XXX & X & XXX \\ \hline
+Graphisme & XXX & X & XXX & X \\ \hline
+I.A & X & & X & \\ \hline
+Gameplay & X & X & X & X \\ \hline
+Réseau & X & XX & X & \\ \hline
+Audio & X & X & X & X \\ \hline
+Site Web & X & X & X & XXX \\ \hline
+\end{tabular}\\\\\\
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+2eme Soutenance & Lemka & Zimpo & Mahcam & Benli\\ \hline
+Codage & X  & XXX & X & XXX \\ \hline
+Graphisme & XXX & X & XXX & X \\ \hline
+I.A & X & X & XX & X \\ \hline
+Gameplay & X & X & X & X \\ \hline
+Réseau & X & XX & X & X\\ \hline
+Audio & X & X & X & X \\ \hline
+Site Web & X & X & X & XX \\ \hline
+\end{tabular}\\\\\\
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+3ere Soutenance & Lemka & Zimpo & Mahcam & Benli\\ \hline
+Codage & ! & ! & ! & ! \\ \hline
+Graphisme & ! & ! & ! & ! \\ \hline
+I.A & ! & ! & ! & ! \\ \hline
+Gameplay & ! & ! & ! & ! \\ \hline
+Réseau & ! & ! & ! & ! \\ \hline
+Audio & ! & ! & ! & ! \\ \hline
+Site Web & ! & ! & ! & ! \\ \hline
+\end{tabular}\\\\
+
+Légende :\\\\
+X = investissement collectif\\
+XX = investissement important\\
+XXX = investissement acharné\\
+! = dépassement de capacité de la case, dû à un investissement trop important
+     
+
+\newpage
+\section{Le temps c'est de l'argent}
+
+\subsection{Le temps...}
+
+Etant fortement impliqués dans ce projet, nous pensons atteindre nos objectifs puisque les Jamais 204 se retrouveront au minimum une fois par semaine (si possible le dimanche) pour l’avancement du projet en temps normal. Bien évidemment vient la semaine rush dans laquelle nous allons bouffer du code de porc. On organisera des plannings en fonction de la disponibilité des membres et de la progression du jeu.
+
+\subsection{...et l'argent !}
+
+Etant extrêmement radins, il est difficile de concevoir que l’on va dépenser de l’argent pour ce projet, l’école nous coute déjà assez cher sans compter la nourriture et les frais de transports, nous utiliserons le matériel de l’école pour économiser l’électricité de chez nous. C’est pour cela que notre budget s’élève à quelques centimes mais mis bout à bout nous pourrons les dépenser sur l’Asset Store.
+
+\newpage
+\section*{Conclusion}
+
+Ce jeu ne représente pas une aventure seulement pour le personnage mais surtout pour nous. Ce sera le moment de tester nos capacités à pleine puissance et montrer ce que « nous » valons en terme de théorie et de pratique.
+Nous espérons donner de la joie et du bonheur aux futurs joueurs et qu’ils sentiront toute la sueur que nous y avons consacré.
+
+
+\end{document}
