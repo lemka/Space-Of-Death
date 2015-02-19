@@ -46,8 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\script\deplacement.cs" />
+     <Compile Include="Assets\script\enemy_script.cs" />
+     <Compile Include="Assets\script\fiche_perso.cs" />
      <Compile Include="Assets\script\generate_script.cs" />
      <Compile Include="Assets\script\perso_script.cs" />
+     <Compile Include="Assets\script\ray.cs" />
      <None Include="Assets\script\map.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/ziwia_000/Documents/epita/Space-Of-Death/Scene_1/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
